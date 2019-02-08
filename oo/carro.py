@@ -122,5 +122,28 @@ class Direcao:
         self.valor = self.direcoes_possiveis[self.pos]
 
 
+class Carro:
+    def __init__(self, direcao, motor):
+        self.motor = motor
+        self.direcao = direcao
+
+    def calcular_velocidade(self):
+        return self.motor.velocidade
+
+    def acelerar(self):
+        return self.motor.acelerar()
+
+    def frear(self):
+        return self.motor.frear()
+
+    def calcular_direcao(self):
+        return self.direcao.valor
+
+    def girar_a_direita(self):
+        return self.direcao.girar_a_direita()
+
+    def girar_a_esquerda(self):
+        return self.direcao.girar_a_esquerda()
+
 if __name__ == '__main__':
     carro = Carro()
