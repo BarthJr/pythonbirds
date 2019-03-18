@@ -1,5 +1,4 @@
 # -*- coding: utf-8 -*-
-from itertools import chain
 from atores import ATIVO
 
 
@@ -43,7 +42,7 @@ class Fase():
 
         :param obstaculos:
         """
-        pass
+        self._obstaculos.extend(obstaculos)
 
     def adicionar_porco(self, *porcos):
         """
