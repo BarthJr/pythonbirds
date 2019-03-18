@@ -89,13 +89,14 @@ class Passaro(Ator):
         self._tempo_de_lancamento = None
         self._angulo_de_lancamento = None  # radianos
 
-    def foi_lancado(self):
+    def foi_lancado(self) -> bool:
         """
         Método que retorna verdadeiro se o pássaro já foi lançado e falso caso contrário
 
-        :return: booleano
         """
-        return True
+        if self._tempo_de_lancamento is not None and self._angulo_de_lancamento is not None:
+            return True
+        return False
 
     def colidir_com_chao(self):
         """
