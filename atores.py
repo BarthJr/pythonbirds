@@ -89,7 +89,7 @@ class Passaro(Ator):
 
     def foi_lancado(self):
         """
-        Método que retorna verdaeira se o pássaro já foi lançado e falso caso contrário
+        Método que retorna verdadeiro se o pássaro já foi lançado e falso caso contrário
 
         :return: booleano
         """
